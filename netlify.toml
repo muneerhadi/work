@@ -1,14 +1,9 @@
 [build]
-  command = "npm run build"
+  command = "npm run build:static"
   publish = "build/client"
 
 [build.environment]
   NODE_VERSION = "19.9.0"
-
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/[[path]]"
-  status = 200
 
 [[redirects]]
   from = "/*"
