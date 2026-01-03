@@ -1,0 +1,1 @@
+import { createPagesFunctionHandler } from \"@remix-run/cloudflare-pages\";\nimport * as build from \"../build/index.js\";\n\nexport const onRequest = createPagesFunctionHandler({ build });
