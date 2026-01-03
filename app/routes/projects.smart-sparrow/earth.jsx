@@ -1,10 +1,4 @@
 import earthModel from '~/assets/earth.glb';
-import mwnx from '~/assets/milkyway-nx.hdr';
-import mwny from '~/assets/milkyway-ny.hdr';
-import mwnz from '~/assets/milkyway-nz.hdr';
-import mwpx from '~/assets/milkyway-px.hdr';
-import mwpy from '~/assets/milkyway-py.hdr';
-import mwpz from '~/assets/milkyway-pz.hdr';
 import milkywayBg from '~/assets/milkyway.jpg';
 import { Loader } from '~/components/loader';
 import { Section } from '~/components/section';
@@ -364,12 +358,8 @@ export const Earth = ({
     };
 
     const loadEnv = async () => {
-      const hdrTexture = await hdrLoader.loadAsync([mwnx, mwny, mwnz, mwpx, mwpy, mwpz]);
-
-      hdrTexture.magFilter = LinearFilter;
-      envMap.current = pmremGenerator.fromCubemap(hdrTexture);
-      pmremGenerator.dispose();
-      await renderer.current.initTexture(envMap.current.texture);
+      // Simplified environment without HDR files
+      envMap.current = { texture: null };
     };
 
     const loadBackground = async () => {
@@ -385,7 +375,7 @@ export const Earth = ({
 
       sceneModel.current.traverse(({ material }) => {
         if (material) {
-          material.envMap = envMap.current.texture;
+          // Simplified material setup without environment map
           material.needsUpdate = true;
         }
       });
