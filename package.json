@@ -1,13 +1,14 @@
 {
   "name": "portfolio",
-  "homepage": "https://hamishw.com",
-  "description": "Portfolio site for Hamish Williams",
-  "repository": "https://github.com/HamishMW/portfolio.git",
-  "author": "Hamish Williams",
+  "homepage": "https://muneerhadi.com",
+  "description": "Portfolio site for Muneer Hadi",
+  "repository": "https://github.com/muneerhadi/portfolio.git",
+  "author": "Muneer Hadi",
   "sideEffects": false,
   "type": "module",
   "scripts": {
     "build": "remix vite:build",
+    "build:netlify": "npm run postinstall && remix vite:build",
     "dev": "node ./scripts/dev.cjs && remix vite:dev",
     "start": "wrangler pages dev ./build/client",
     "postinstall": "node ./scripts/draco.cjs",
