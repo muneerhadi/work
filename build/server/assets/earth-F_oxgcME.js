@@ -3,7 +3,7 @@ import { u as useInViewport, b as useWindowSize, d as numToPx, e as media, a as 
 import { useReducedMotion, useSpring } from "framer-motion";
 import { createContext, useState, useRef, useCallback, useEffect, startTransition, memo, useContext } from "react";
 import { OrbitControls, HDRCubeTextureLoader } from "three-stdlib";
-import { Vector3, WebGLRenderer, SRGBColorSpace, ACESFilmicToneMapping, PerspectiveCamera, Scene, Clock, Raycaster, AmbientLight, DirectionalLight, PMREMGenerator, Sprite, Vector2, AnimationMixer, LinearFilter, EquirectangularReflectionMapping, LoopOnce } from "three";
+import { Vector3, WebGLRenderer,  SRGBColorSpace, ACESFilmicToneMapping,  PerspectiveCamera, Scene, Clock, Raycaster, AmbientLight, DirectionalLight, PMREMGenerator, Sprite, Vector2, AnimationMixer, LinearFilter, EquirectangularReflectionMapping, LoopOnce } from "three";
 import { r as removeLights, c as cleanScene, a as cleanRenderer, g as getChild, m as modelLoader, t as textureLoader } from "./three-CuK32lIV.js";
 import { t as throttle } from "./throttle-DfCjgS7U.js";
 import "@remix-run/react";
