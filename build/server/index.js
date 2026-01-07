@@ -8,7 +8,7 @@ import "react";
 import "framer-motion";
 import "@mdx-js/react";
 export {
-  s as assets,
+  s as assets, 
   i as assetsBuildDirectory,
   j as basename,
   o as entry,
