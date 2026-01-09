@@ -3,3 +3,4 @@ const n="Muneer Hadi",e="Developer",i=["Django","Laravel","React","Vue.js","MySQ
  \\ \\∕\\ \\
   \\∕  \\∕
 `,h={name:n,role:e,disciplines:i,url:o,linkedin:s,wechat:t,github:c,repo:a,ascii:r};export{h as c};
+ 
