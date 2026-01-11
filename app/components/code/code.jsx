@@ -7,7 +7,7 @@ import { useRef, useState } from 'react';
 import styles from './code.module.css';
 
 export const Code = props => {
-  const [copied, setCopied] = useState(false);
+  const [copied, setCopied] = useState(false); 
   const { theme } = useTheme();
   const elementRef = useRef();
   const copyTimeout = useRef();
