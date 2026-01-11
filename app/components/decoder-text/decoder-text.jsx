@@ -5,10 +5,10 @@ import { delay } from '~/utils/delay';
 import { classes } from '~/utils/style';
 import styles from './decoder-text.module.css';
 
-// prettier-ignore
+// prettier-ignore 
 const glyphs = [
   'ア', 'イ', 'ウ', 'エ', 'オ',
-  'カ', 'キ', 'ク', 'ケ', 'コ',
+  'カ', 'キ', 'ク', 'ケ', 'コ', 
   'サ', 'シ', 'ス', 'セ', 'ソ',
   'タ', 'チ', 'ツ', 'テ', 'ト',
   'ナ', 'ニ', 'ヌ', 'ネ', 'ノ',
